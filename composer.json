@@ -1,0 +1,36 @@
+{
+    "name": "hexify/laravel-id-customizer",
+    "description": "A laravel package to customize IDs formats.",
+    "keywords": ["laravel", "id customizer", "id generator", "random id", "prefixed id"],
+    "type": "laravel-package",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/0F-Hexify/Laravel-ID-Customizer/issues",
+        "source": "https://github.com/0F-Hexify/Laravel-ID-Customizer"
+    },
+    "authors": [
+        {
+            "name": "Fateh LAYACHI",
+            "email": "layfateh.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "doctrine/dbal": "^3.3.5",
+        "illuminate/support": "^8.0|^9.0",
+        "illuminate/database": "^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hexify\\LaraIdCustomizer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hexify\\LaraIdCustomizer\\IdCustomizerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
